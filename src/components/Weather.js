@@ -12,7 +12,7 @@ export default function Weather(props) {
   const [city, setCity] = useState(props.defaultCity);
   const [requestError, setRequestError] = useState("");
 
-  function handleResponse(response) {
+  const handleResponse = (response) => {
     
     setWeatherData({
       ready: true,
@@ -27,13 +27,12 @@ export default function Weather(props) {
     });
     
   }
-
-  function handleSubmit(event) {
+  const handleSubmit = (event) =>  {
     event.preventDefault();
     search();
   }
 
-  function handleCityChange(event) {
+  const handleCityChange = (event) => {
     setCity(event.target.value);
     const input = {};
     if (!input.placeholder) {
@@ -41,7 +40,7 @@ export default function Weather(props) {
   }
     }
      
-  function search() {
+  const search = () => {
     const apiKey = "8cac06f7ab6c10287cd06a316ff84a57";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl)
