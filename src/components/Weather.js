@@ -54,7 +54,7 @@ export default function Weather(props) {
 
   if (weatherData.ready) {
     return (
-      <div className="Weather">
+      <div className="Weather bg-image">
         <form onSubmit={handleSubmit}>
           <div className="row">
             <div className="col-9">
@@ -64,21 +64,16 @@ export default function Weather(props) {
                 className= "form-control search-input"
                 autoFocus= "on"
                 onChange= {handleCityChange}
-                
               />
               <FaSearch className="icon-search" /> 
               {requestError && <h3>{requestError}</h3>}
-              
             </div>
-           
             <div className="col-3">
               <input
                 type="submit"
                 value="Search"
                 className="btn btn-primary w-100"
-                
               />
-             
             </div>
           </div>
         </form>
