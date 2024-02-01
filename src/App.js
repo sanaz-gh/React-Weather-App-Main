@@ -11,14 +11,6 @@ function App() {
         <footer>
           This project was coded by {" "}
           Sanaz-Gh 
-          {/* <a
-            href="https://lucent-faloodeh-e0374f.netlify.app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {" "}
-               Hosted on Netlify
-          </a> */}
           {" "}
         </footer>
       </div>

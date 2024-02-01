@@ -54,7 +54,8 @@ export default function Weather(props) {
 
   if (weatherData.ready) {
     return (
-      <div className="Weather bg-image">
+      <div className="bg-image">
+      <div className="Weather">
         <form onSubmit={handleSubmit}>
           <div className="row">
             <div className="col-9">
@@ -80,13 +81,13 @@ export default function Weather(props) {
         <WeatherInfo data={weatherData} />
         <WeatherForecast coordinates={weatherData.coordinates} />
       </div>
+      </div>
     );
   } else {
     search();
    
     return (
       <div>
-      
         <ThreeDots 
           height="80" 
           width="80" 
