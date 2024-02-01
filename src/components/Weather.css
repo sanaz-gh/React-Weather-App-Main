@@ -91,6 +91,21 @@
     background:transparent;
   }
 }
+@media screen and (max-width : 390px) {
+  .Weather .btn {
+    border: none;
+    font-size: 10px;
+    font-weight: 700;
+    height: 40px;
+    width: 120px;
+    text-align: center;
+    padding: 8px;
+    color: #fff;
+    border-radius: 6px;
+    border: 2px solid  #fff;
+    background:transparent;
+  }
+}
 
 .Weather .search-input {
     background: #f9f7fe;
