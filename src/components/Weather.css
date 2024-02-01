@@ -76,10 +76,10 @@
    color: #888;
    border: none;
 }
-@media screen and (max-width : 460px) {
+@media screen and (max-width : 412px) {
   .Weather .btn {
     border: none;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 700;
     height: 40px;
     text-align: center;
