@@ -76,6 +76,21 @@
    color: #888;
    border: none;
 }
+@media screen and (max-width : 475px) {
+  .Weather .btn {
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    height: 40px;
+    width: 120px;
+    text-align: center;
+    padding: 8px;
+    color: #fff;
+    border-radius: 6px;
+    border: 2px solid  #fff;
+    background:transparent;
+  }
+}
 
 .Weather .search-input {
     background: #f9f7fe;
